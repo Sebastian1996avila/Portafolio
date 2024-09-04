@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Avila</title>
+    <style>
+        /* CSS aquí */
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1; /* Gris Claro */
+    color: #34495e; /* Gris Oscuro */
+    }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-gap: 10px;
+            height: 100vh;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #2c3e50; /* Azul Noche */
+            color: #ecf0f1; /* Gris Claro */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #ffffff; /* Blanco para un contraste claro */
+            padding: 10px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: #ffffff; /* Blanco */
+            padding: 10px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #2c3e50; /* Azul Noche */
+            color: #ecf0f1; /* Gris Claro */
+            text-align: center;
+            padding: 10px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #3498db; /* Azul Claro */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "footer";
+            }
+            .sidebar {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Mi Portafolio</h1>
+        </header>
+        <aside class="sidebar">
+            <!-- Puedes añadir aquí información adicional o enlaces relevantes -->
+            <h2>Sobre Mí</h2>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, suscipit animi quisquam dicta sapiente illum saepe quibusdam, quae rerum quas architecto, 
+                illo asperiores rem possimus odit doloribus obcaecati hic magnam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, exercitationem. Veritatis
+                rem dolorem vero quae, et accusantium dolore, quia vel voluptate, totam minus natus. Officia laboriosam earum aut voluptate recusandae.</p>
+            
+            <p>...</p>
+        </aside>
+        <main class="main">
+            <section class="profile">
+                <img src="images/Vector_logo_with_bottel_beer.jpg" alt="Foto de perfil de Sebastian Avila">
+                <h1>Sebastian Avila</h1>
+                <p>Soy un estudiante enfocado en la programación front-end con una sólida base en tecnologías web modernas. Actualmente, estoy cursando Tecnología en Desarrollo de Software y he adquirido habilidades prácticas en el desarrollo de interfaces de usuario interactivas y atractivas.</p>
+                <h2>Mis habilidades incluyen:</h2>
+                <ul>
+                    <li>HTML5 y CSS3: Creación de estructuras semánticas y diseño responsivo adaptado a diferentes dispositivos.</li>
+                    <li>JavaScript: Implementación de funcionalidades dinámicas y manejo del DOM para mejorar la experiencia del usuario.</li>
+                    <li>Frameworks y bibliotecas: Familiaridad con React y Bootstrap para desarrollar aplicaciones web eficientes y visualmente atractivas.</li>
+                </ul>
+            </section>
+            <section class="projects">
+                <h2>Mis Proyectos</h2>
+                <ul>
+                    <li><a href="link-al-proyecto1.html">Proyecto 1</a>: Descripción del proyecto 1.</li>
+                    <li><a href="link-al-proyecto2.html">Proyecto 2</a>: Descripción del proyecto 2.</li>
+                    <li><a href="link-al-proyecto3.html">Proyecto 3</a>: Descripción del proyecto 3.</li>
+                </ul>
+            </section>
+            <section class="contact">
+                <h2>Contacto</h2>
+                <p>Puedes contactarme a través del siguiente correo: <a href="mailto:sebastian.avila@utp.edu.co">sebastian.avila@utp.edu.co</a></p>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
