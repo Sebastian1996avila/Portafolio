@@ -16,7 +16,7 @@
 
         .container {
             display: grid;
-            grid-template-columns: 2fr 3fr ;
+            grid-template-columns: 2fr 3fr;
             grid-template-rows: auto 1fr auto;
             grid-template-areas:
                 "header header"
@@ -27,22 +27,23 @@
             padding: 10px;
             box-sizing: border-box;
         }
+
         .container2 {
-            display: flex;                  /* Utiliza flexbox para el contenedor */
-            flex-wrap: wrap;                /* Permite que los elementos se envuelvan en varias líneas si es necesario */
-            gap: 20px;                      /* Espacio entre los elementos de flexbox */
-            padding: 20px;                 /* Relleno dentro del contenedor */
-            background-color: #f9f9f9;     /* Fondo del contenedor */
+            display: flex;                  
+            flex-wrap: wrap;                
+            gap: 20px;                     
+            padding: 20px;                 
+            background-color: #f9f9f9;     
         }
         
         .container2 p {
-            flex: 1 1 30%;                  /* Flexibilidad de los párrafos: crecer, encogerse y ocupar el 30% del ancho del contenedor */
-            box-sizing: border-box;        /* Incluye el relleno y el borde en el ancho y alto del elemento */
-            padding: 15px;                 /* Relleno dentro de cada párrafo */
-            background-color: #ffffff;     /* Fondo blanco para cada párrafo */
-            border: 1px solid #031f3b;        /* Borde gris claro para cada párrafo */
-            border-radius: 5px;            /* Bordes redondeados */
-            margin: 10px 0;                /* Margen superior e inferior para los párrafos */
+            flex: 1 1 30%;                  
+            box-sizing: border-box;        
+            padding: 15px;                 
+            background-color: #ffffff;     
+            border: 1px solid #031f3b;        
+            border-radius: 5px;            
+            margin: 10px 0;                
         }
         
         .video-container {
@@ -263,20 +264,18 @@
         </header>
         <aside class="sidebar">
             <h2>Sobre Mí</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, suscipit animi quisquam dicta sapiente illum saepe quibusdam, quae rerum quas architecto, illo asperiores rem possimus odit doloribus obcaecati hic magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, exercitationem. Veritatis rem dolorem vero quae, et accusantium dolore, quia vel voluptate, totam minus natus. Officia laboriosam earum aut voluptate recusandae.</p>
-            <img src="images/front.jpg" alt="Foto de perfil">
-                <div class="container2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis unde maxime eum aliquid dolore illum deserunt velit reprehenderit minus obcaecati facilis, facere laboriosam culpa quisquam aliquam officiis quibusdam similique.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur illum ad nihil quaerat vel exercitationem eius recusandae nulla quisquam quia totam maiores, debitis amet? Nobis consequatur unde quos et sint.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore provident, laudantium, iste vel, commodi quasi cumque repellendus at quidem ex esse facere omnis. Impedit pariatur earum dignissimos dolorum expedita!</p>    
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur illum ad nihil quaerat vel exercitationem eius recusandae nulla quisquam quia totam maiores, debitis amet? Nobis consequatur unde quos et sint.</p>
-                    
-                </div>
-                <h1>Mi perfil</h1>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lcg_lmI9WCw?si=YV_Ptm0xhNnoiLKv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    
-                
+            <p>Soy un apasionado desarrollador front-end con un enfoque en crear experiencias web intuitivas y atractivas. Me encanta transformar ideas en interfaces interactivas y funcionales. Desde el primer día en que escribí mi primer "Hola Mundo", supe que quería dedicarme a la programación.</p>
+            <img src="images/front.jpg" alt="Foto de perfil de Sebastian Avila">
+            <div class="container2">
+                <p>He trabajado en diversos proyectos que abarcan desde aplicaciones web simples hasta sistemas más complejos. Siempre busco aprender nuevas tecnologías y mantenerme al día con las tendencias del sector.</p>
+                <p>Mi enfoque en el diseño responsivo asegura que mis proyectos sean accesibles en cualquier dispositivo, brindando una experiencia óptima para el usuario. Creo firmemente que la usabilidad es clave en el desarrollo web.</p>
+                <p>Además, tengo experiencia colaborando en equipos ágiles, donde la comunicación efectiva y la adaptabilidad son esenciales para el éxito del proyecto. La sinergia en el trabajo en equipo es algo que valoro profundamente.</p>
+                <p>Me apasiona el desarrollo sostenible y busco maneras de optimizar el rendimiento de mis aplicaciones, minimizando el uso de recursos y mejorando los tiempos de carga.</p>
+            </div>
+            <h1>Mi perfil</h1>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9zkKiPFydvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </aside>
         <main class="main">
             <section class="parallax">
@@ -288,81 +287,44 @@
                 <p>Soy un estudiante enfocado en la programación front-end con una sólida base en tecnologías web modernas. Actualmente, estoy cursando Tecnología en Desarrollo de Software y he adquirido habilidades prácticas en el desarrollo de interfaces de usuario interactivas y atractivas.</p>
                 <h2>Mis habilidades incluyen:</h2>
                 <ul>
-                    <li>HTML5 y CSS3: Creación de estructuras semánticas y diseño responsivo adaptado a diferentes dispositivos.</li>
-                    <li>JavaScript: Implementación de funcionalidades dinámicas y manejo del DOM para mejorar la experiencia del usuario.</li>
-                    <li>Frameworks y bibliotecas: Familiaridad con React y Bootstrap para desarrollar aplicaciones web eficientes y visualmente atractivas.</li>
+                    <li><strong>HTML5 y CSS3:</strong> Creación de estructuras semánticas y diseño responsivo adaptado a diferentes dispositivos.</li>
+                    <li><strong>JavaScript:</strong> Implementación de funcionalidades dinámicas y manejo del DOM para mejorar la experiencia del usuario.</li>
+                    <li><strong>Frameworks y bibliotecas:</strong> Familiaridad con React y Bootstrap para desarrollar aplicaciones web eficientes y visualmente atractivas.</li>
+                    <li><strong>Control de versiones:</strong> Uso de Git para la gestión de proyectos y colaboración en equipo, asegurando un flujo de trabajo ágil.</li>
+                    <li><strong>Accesibilidad:</strong> Compromiso con las mejores prácticas para crear aplicaciones inclusivas para todos los usuarios.</li>
                 </ul>
-            </section>
-            <section class="slider">
-                <div class="slides">
-                    <div class="slide"><img src="images/slide1.jpg" style="width:100%"></div>
-                    <div class="slide"><img src="images/slide2.jpg" style="width:100%"></div>
-                    <div class="slide"><img src="images/slide3.jpg" style="width:100%"></div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </section>
             <section class="projects">
                 <h2>Mis Proyectos</h2>
                 <ul>
-                    <li><a href="link-al-proyecto1.html">Proyecto 1</a>: Proyecto de software para nómina.</li>
-                    <li><a href="link-al-proyecto2.html">Proyecto 2</a>: Proyecto de página web para restaurante.</li>
+                    <li><a href="link-al-proyecto1.html">Proyecto de Gestión de Tareas</a>: Una aplicación web que permite a los usuarios organizar y gestionar sus tareas diarias de manera eficiente.</li>
+                    <li><a href="link-al-proyecto2.html">Página Web para Restaurante</a>: Un sitio web responsivo diseñado para mejorar la experiencia del cliente, con un sistema de reservas y un menú interactivo.</li>
                 </ul>
-            </section>
-            <section class="contact">
-                <h2>Contacto</h2>
-                <div class="contact-form">
-                    <h2>Contacto</h2>
-                    <form id="contactForm">
-                        <input type="text" name="name" placeholder="Tu Nombre" required>
-                        <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                        <textarea name="message" placeholder="Tu Mensaje" rows="5" required></textarea>
-                        <button type="submit">Enviar Mensaje</button>
-                    </form>
-                </div>
-                <p>Puedes contactarme a través del siguiente correo: <a href="mailto:sebastian.avila@utp.edu.co">sebastian.avila@utp.edu.co</a></p>
-                <p>Puedes visitar mi LinkedIn: <a href="https://www.linkedin.com/in/sebastian-avila-aa9a35215/">Perfil LinkedIn</a></p>
             </section>
             <section class="testimonials">
                 <h2>Testimonios</h2>
                 <div class="testimonial">
-                    <p>"Sebastián es un profesional increíble. Su trabajo en el desarrollo front-end superó nuestras expectativas."</p>
+                    <p>""</p>
                     <h3>Cliente 1</h3>
                 </div>
                 <div class="testimonial">
-                    <p>"Siempre es un placer colaborar con Sebastián. Tiene un gran ojo para el detalle y un excelente conocimiento técnico."</p>
+                    <p>""</p>
                     <h3>Cliente 2</h3>
                 </div>
             </section>
+            <section class="contact">
+                <h2>Contacto</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
         </main>
         <footer class="footer">
-            <p>&copy; 2024. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Sebastian Avila. Todos los derechos reservados.</p>
         </footer>
     </div>
-
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides() {
-            let i;
-            let slides = document.querySelectorAll('.slide');
-            if (slideIndex >= slides.length) { slideIndex = 0; }
-            if (slideIndex < 0) { slideIndex = slides.length - 1; }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex].style.display = "block";
-        }
-
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
-        });
-    </script>
 </body>
 </html>
